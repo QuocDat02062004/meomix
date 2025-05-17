@@ -1,0 +1,519 @@
+@import url("https://fonts.cdnfonts.com/css/bauhaus-93");
+@import url("https://fonts.cdnfonts.com/css/calibri-light");
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #79342c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+}
+
+.search-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 150px;
+}
+
+.search-box i {
+  color: #555;
+  margin-right: 5px;
+}
+
+.auth {
+  display: flex;
+  gap: 10px;
+  /* border-left: 1px solid white; */
+  padding-left: 20px;
+}
+
+.auth .register {
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+.cart-button {
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  background: none;
+  cursor: pointer;
+}
+
+.cart-button i {
+  font-size: 16px;
+}
+
+/* BANNER */
+.banner {
+  position: relative;
+  background-image: url("./assets/banner2.png");
+  background-size: cover;
+  background-position: center;
+  color: #6b1f1f;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.banner-content {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  max-width: 600px;
+  height: 100%;
+}
+
+.banner-content .meomix {
+  font-family: "Bauhaus 93", sans-serif;
+  font-size: 100px;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.banner hr {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #f7d6a0;
+  margin: 15px 0;
+}
+
+.banner .cta {
+  margin-top: 30px;
+  background: #ffe0d1;
+  color: #d62828;
+  padding: 12px 25px;
+  border-radius: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 100px;
+}
+
+.banner .cta::after {
+  content: " >";
+  margin-left: 5px;
+}
+
+/* list product */
+.list-product {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 17px;
+  color: #78302b;
+}
+
+.list-product p {
+  margin: 0;
+}
+
+.product-category {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0px 40px 20px 40px;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  /* background-color: #ffe4a6; */
+  border-radius: 20px;
+  width: 32%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+}
+
+.item-img {
+  width: 45%;
+  height: auto;
+  object-fit: contain;
+}
+
+.item-content {
+  padding-left: 20px;
+  flex: 1;
+}
+
+.item-content h3 {
+  font-size: 30px;
+  color: #a4454a;
+  margin: 0 0 10px;
+}
+
+.item-content p {
+  font-size: 15px;
+  color: #6f4e37;
+  margin-bottom: 15px;
+  padding-right: 20px;
+}
+
+.buy-button {
+  background-color: #a4454a;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 19px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: 56%;
+}
+
+.history-meo-mix {
+  background-image: url("./assets/banner1.png");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  color: white;
+  padding: 40px 20px 0px 40px;
+}
+
+.seller {
+  background-image: url("./assets/banner9.png");
+  background-size: cover;
+  background-position: center;
+  height: 940px;
+}
+
+.seller-text {
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Calibri Light", sans-serif;
+  color: #b54d48;
+  font-weight: 900;
+  padding-top: 30px;
+}
+.seller-text-desc {
+  font-size: 49px;
+  text-align: center;
+  margin-top: 0;
+  color: #b54d48;
+  font-weight: 400;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.meowmix-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #a23b37;
+  margin-bottom: 20px;
+}
+
+.meowmix-body {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #6a1e1c;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+/* desc */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.divider {
+  width: 1px;
+  background-color: #7f2c1c;
+  height: auto;
+}
+
+.left-content {
+  flex: 2;
+  padding-right: 20px;
+  width: 70%;
+}
+
+.left-content h1,
+.left-content h2 {
+  color: #7f2c1c;
+  margin-top: 20px;
+}
+
+.right-tables {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  width: 30%;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: white;
+  color: #7f2c1c;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid #7f2c1c;
+  font-weight: bold;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.right-content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 20px;
+}
+
+.right-item {
+  text-align: center;
+}
+
+.right-item .placeholder {
+  width: 200px; /* chỗ để ảnh */
+  height: 220px; /* chỗ để ảnh */
+  background-color: #eee;
+  border: 2px dashed #bbb;
+  margin: 0 auto 15px auto;
+  border-radius: 10px;
+}
+
+.caption {
+  color: #b06b67;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tested-review {
+  background-image: url("./assets/banner4.png");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  color: white;
+  padding: 40px 20px 0px 40px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #753934;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.follow {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.follow a {
+  color: white;
+  margin-left: 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.note {
+  max-width: 600px;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links div {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.container-pate {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.product {
+  width: 250px;
+}
+.product img {
+  width: 100%;
+  height: auto;
+}
+.product-title {
+  font-weight: bold;
+  color: #cc3333;
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+.stars {
+  margin-top: 10px;
+  color: gold;
+  font-size: 22px;
+  text-align: center;
+}
+.rating {
+  font-size: 18px;
+  color: #333;
+  margin-left: 5px;
+}
+
+/* modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+}
+
+.modal h2 {
+  color: #a32d26;
+  text-align: center;
+}
+
+.modal input {
+  display: block;
+  width: 94%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn {
+  background: #a32d26;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: #8e231d;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 14px;
+  color: gray;
+}

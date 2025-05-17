@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="./product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Meow Mix Logo" />
+      </div>
+
+      <nav class="menu">
+        <a href="home.html">Trang Chủ</a>
+        <a href="#">Giới Thiệu</a>
+        <a href="product.html">Sản Phẩm</a>
+        <a href="#">Tin Tức</a>
+        <a href="#">Liên Hệ</a>
+      </nav>
+
+      <div class="search-login-cart">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search..." />
+        </div>
+        <div class="auth">
+          <a
+            class="register"
+            href="#"
+            style="color: white; text-decoration: none"
+            >Đăng Ký</a
+          >
+          <a href="#" style="color: white; text-decoration: none">Đăng Nhập</a>
+        </div>
+        <button class="cart-button">
+          <i class="fas fa-cart-shopping"></i>
+          Giỏ Hàng
+        </button>
+      </div>
+    </header>
+    <div class="product-banner"></div>
+    <h2 class="product-pate-uot">Pate ướt đầy dinh dưỡng</h2>
+    <div class="container-pate" style="margin-top: 20px"></div>
+    <hr
+      style="height: 2px; background-color: #78302b; border: none; width: 90%"
+    />
+    <h2 class="product-pate-uot">Gói đa dạng</h2>
+    <div class="container-pate" style="margin-top: 20px"></div>
+    <hr
+      style="height: 2px; background-color: #78302b; border: none; width: 90%"
+    />
+    <h2 class="product-pate-uot">Thức ăn khô cho mèo</h2>
+    <div class="container-pate" style="margin-top: 20px"></div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="follow">
+          <strong>Theo:</strong>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="note">
+          Công thức và bao bì sản phẩm có thể thay đổi. Vui lòng tham khảo bao
+          bì sản phẩm để biết thông tin đầy đủ về dinh dưỡng và thành phần.
+        </p>
+      </div>
+      <div class="footer-links">
+        <div><strong>Liên hệ với chúng tôi</strong><br />Cửa hàng Smucker</div>
+        <div><strong>Nơi để mua</strong></div>
+        <div><strong>Câu hỏi thường gặp</strong></div>
+      </div>
+      <div class="footer-bottom">
+        <p>Thông báo khi nhận hàng | Về Quảng cáo của chúng tôi</p>
+        <p>Chính sách bảo mật | Điều khoản sử dụng |</p>
+        <p>Đạo luật về chuỗi cung ứng minh bạch của California |</p>
+        <p>Gx Lựa chọn quyền riêng tư của bạn</p>
+        <p>S/TM/® Công ty TNHH Big Heart Det</p>
+      </div>
+    </footer>
+  </body>
+  <script src="./product.js"></script>
+  <script>
+    const links = document.querySelectorAll(".menu a");
+    const currentPage = location.pathname.split("/").pop();
+
+    links.forEach((link) => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+</html>

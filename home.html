@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meow Mix Header</title>
+    <link rel="stylesheet" href="./home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Meow Mix Logo" />
+      </div>
+
+      <nav class="menu">
+        <a href="home.html">Trang Chủ</a>
+        <a href="#">Giới Thiệu</a>
+        <a href="product.html">Sản Phẩm</a>
+        <a href="#">Tin Tức</a>
+        <a href="#">Liên Hệ</a>
+      </nav>
+
+      <div class="search-login-cart">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search..." />
+        </div>
+        <div class="auth">
+          <a
+            id="showRegister"
+            class="register"
+            href="#"
+            style="color: white; text-decoration: none"
+          >
+            Đăng Ký
+          </a>
+          <a id="showLogin" href="#" style="color: white; text-decoration: none"
+            >Đăng Nhập</a
+          >
+        </div>
+        <button class="cart-button">
+          <i class="fas fa-cart-shopping"></i>
+          Giỏ Hàng
+        </button>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="banner-content">
+        <p class="meomix">MEOW MIX</p>
+        <hr />
+        <p>
+          Không cần phải tò mò nhiều để tìm ra mèo của bạn muốn gì vào giờ ăn.
+          Chỉ cần lắng nghe—và cho mèo ăn thức ăn cho mèo Meow Mix<sup>®</sup>,
+          được làm từ dinh dưỡng cân bằng mà mèo cần và hương vị hấp dẫn mà
+          chúng yêu thích.
+        </p>
+        <button class="cta">Xem sản phẩm</button>
+      </div>
+    </div>
+    <div class="list-product">
+      <p>Danh mục sản phẩm</p>
+    </div>
+    <!-- list product -->
+    <div class="product-category">
+      <div class="category-item" style="background-color: #fdba4a">
+        <img
+          src="./assets/listproduct3.png"
+          alt="Gắn kết sen và boss"
+          class="item-img"
+        />
+        <div class="item-content">
+          <h3>
+            <span class="line1" style="margin-left: -30px">GẮN KẾT</span><br />
+            <span class="line2">SEN & BOSS</span>
+          </h3>
+          <p>Phụ kiện - chăm sóc pet cưng của bạn.</p>
+          <button class="buy-button">Mua ngay</button>
+        </div>
+      </div>
+
+      <div class="category-item" style="background-color: #fcd392">
+        <img
+          src="./assets/listproduct2.png"
+          alt="Mặt hàng mới"
+          class="item-img"
+        />
+        <div class="item-content">
+          <h3>MẶT HÀNG MỚI</h3>
+          <p>Được các sen săn đón.</p>
+          <button class="buy-button">Mua ngay</button>
+        </div>
+      </div>
+
+      <div class="category-item" style="background-color: #f8dcb2">
+        <img
+          src="./assets/listproduct1.png"
+          alt="Ưu đãi mùa hè"
+          class="item-img"
+        />
+        <div class="item-content">
+          <h3>
+            <span class="line1" style="margin-left: -20px">ƯU ĐÃI</span><br />
+            <span class="line2" style="margin-left: 10px">MÙA HÈ</span>
+          </h3>
+          <p style="margin-left: -20px">
+            Đối với các mặt hàng nóng đang có tại cửa hàng.
+          </p>
+          <button class="buy-button">Mua ngay</button>
+        </div>
+      </div>
+    </div>
+    <div class="list-product">
+      <p>Best Seller</p>
+    </div>
+    <div class="container-pate" style="margin-top: 20px">
+      <div class="product">
+        <img src="./assets/patehop.png" alt="Pate thịt Bò" />
+        <div class="product-title">Pate thịt Bò</div>
+        <div class="stars">★★★★★<span class="rating">(599)</span></div>
+      </div>
+      <div class="product">
+        <img src="./assets/patecahoi.png" alt="Pate cá Hồi" />
+        <div class="product-title">Pate cá Hồi</div>
+        <div class="stars">★★★★★<span class="rating">(599)</span></div>
+      </div>
+      <div class="product">
+        <img src="./assets/patebanhmi.png" alt="Pate bánh mì" />
+        <div class="product-title">Pate bánh mì</div>
+        <div class="stars">★★★★★<span class="rating">(599)</span></div>
+      </div>
+    </div>
+
+    <div class="seller">
+      <p class="seller-text">ƯU ĐÃI THÁNG 5</p>
+      <p class="seller-text-desc">Luôn dành cho các sen giá cả tốt nhất.</p>
+    </div>
+
+    <div class="history-meo-mix">
+      <div class="meowmix-title">Lịch sử Meow Mix ®</div>
+      <div class="meowmix-body">
+        Trong hơn 50 năm qua, thức ăn cho mèo Meow Mix là loại thức ăn duy nhất
+        mà mèo yêu cầu theo tên ® — và chúng đã thưởng thức từng miếng.<br />
+        Hãy cùng xem một số khoảnh khắc vui vẻ mà chúng tôi đã có trong suốt
+        hành trình từ đó đến khi "meo meo".
+      </div>
+    </div>
+
+    <!-- desc -->
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="left-content">
+          <h1>GIỚI THIỆU VỀ MEOW MIX</h1>
+          <p>
+            Meow Mix được tạo ra vào năm 1974 và ban đầu thuộc sở hữu của Công
+            ty Ralston Purina—nay là Nestlé-Purina. Thương hiệu Meow Mix đã trải
+            qua nhiều chủ sở hữu trong bốn mươi năm tiếp theo, đầu tiên là được
+            bán cho Del Monte Foods, lúc đó là chủ sở hữu của Big Heart Pet
+            Brands. Meow Mix đã được một công ty cổ phần có tên là Cypress Group
+            mua lại, sau đó trở lại quyền sở hữu của Del Monte Foods.
+          </p>
+
+          <p>
+            Vào năm 2015, công ty JM Smucker đã mua lại Big Heart Pet Brands. Là
+            một phần của gia đình JM Smucker Big Heart Pet Brand, Meow Mix được
+            bán bởi cùng một công ty sở hữu 9Lives , Dick Van Patten's Natural
+            Balance , Rachael Ray Nutrish và các thương hiệu khác.
+          </p>
+
+          <p>
+            Meow Mix có lẽ được biết đến nhiều nhất với khẩu hiệu của mình—“thức
+            ăn mà mèo yêu cầu theo tên” và giai điệu đi kèm. Thương hiệu này
+            tiết kiệm, cung cấp nhiều loại sản phẩm đáng tin cậy và dễ tìm thấy
+            tại các cửa hàng trên toàn thế giới..
+          </p>
+
+          <h2>NGUỒN CUNG ỨNG VÀ SẢN XUẤT</h2>
+          <p>
+            Thức ăn khô Meow Mix được sản xuất tại cơ sở của công ty ở Decatur,
+            Alabama. Cơ sở sản xuất này cũng sản xuất các sản phẩm Alley Cat.
+            Thức ăn ướt cho mèo Meow Mix được sản xuất tại Thái Lan.
+          </p>
+
+          <p>
+            Công ty không cung cấp thông tin về hoạt động tìm nguồn cung ứng của
+            mình.
+          </p>
+        </div>
+
+        <div class="divider"></div>
+        <div class="right-content">
+          <table>
+            <thead>
+              <tr>
+                <th>SẢN PHẨM CHO MÈO ĐƯỢC ĐÁNH GIÁ CAO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Combo hạt-pate-phụ kiện.</td>
+              </tr>
+              <tr>
+                <td>Set pate meow mix vị bò.</td>
+              </tr>
+              <tr>
+                <td>Set đồ chơi cho mèo cưng.</td>
+              </tr>
+              <tr>
+                <td>Xem thêm</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th>SẢN PHẨM DỊCH VỤ CHÍNH</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Đồ ăn khô.</td>
+              </tr>
+              <tr>
+                <td>Đồ ăn ướt.</td>
+              </tr>
+              <tr>
+                <td>Phụ kiện- chăm sóc.</td>
+              </tr>
+              <tr>
+                <td>Mua tại cửa hàng.</td>
+              </tr>
+              <tr>
+                <td>Đặt mua tại wedsite.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="content-wrapper" style="margin-top: 20px">
+        <div class="left-content">
+          <h1>MEOWW MIX CUNG CẤP NHỮNG LOẠI THỨC ĂN NÀO CHO MÈO</h1>
+          <p>Dòng sản phẩm Meow Mix bao gồm cả thức ăn ướt và khô.</p>
+          <p>
+            Các loại thức ăn khô Meow Mix bao gồm Original Choice, Tender
+            Centers, Bistro Recipes®, Hairball Control, Indoor Formula, Kitten
+            Li'l Nibbles® và Seafood Medley.
+          </p>
+          <p>
+            Các loại Paté ướt của thương hiệu này bao gồm Tender Favorites®,
+            Simple Servings®, Classic Paté và Paté Toppers.
+          </p>
+          <p>
+            Thương hiệu này cũng cung cấp nhiều loại đồ ăn vặt dành cho mèo..
+          </p>
+
+          <h2>THỨC ĂN CHO MÈO CỦA MEOW MIX CÓ BỊ THU HỒI KHÔNG?</h2>
+          <p>Meow Mix chưa bao giờ bị thu hồi.</p>
+          <p>
+            Vào năm 2015, một nhóm bảo vệ người tiêu dùng đã gây quỹ cộng đồng
+            cho một nghiên cứu về chất gây ô nhiễm trong tám loại thức ăn cho
+            thú cưng, bao gồm cả thức ăn cho mèo Meow Mix Tender Centers. Meow
+            Mix Tender Centers có mức độ ô nhiễm nấm mốc mycotoxin cao nhất
+            trong tất cả các loại thực phẩm được thử nghiệm và mức độ này được
+            coi là "rủi ro cao".
+          </p>
+        </div>
+        <div class="divider"></div>
+        <div class="right-content">
+          <div class="right-item">
+            <div>
+              <img width="70%" src="./assets/right1.png" alt="right1" />
+            </div>
+            <div class="caption">
+              Thức ăn khô cho mèo Meow Mix Original Choice
+            </div>
+          </div>
+
+          <div class="right-item">
+            <div>
+              <img width="70%" src="./assets/right1.png" alt="right1" />
+            </div>
+            <div class="caption">
+              Meow Mix Tender Centers Salmon &amp; White Meat Chicken
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tested-review"></div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="follow">
+          <strong>Theo:</strong>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="note">
+          Công thức và bao bì sản phẩm có thể thay đổi. Vui lòng tham khảo bao
+          bì sản phẩm để biết thông tin đầy đủ về dinh dưỡng và thành phần.
+        </p>
+      </div>
+      <div class="footer-links">
+        <div><strong>Liên hệ với chúng tôi</strong><br />Cửa hàng Smucker</div>
+        <div><strong>Nơi để mua</strong></div>
+        <div><strong>Câu hỏi thường gặp</strong></div>
+      </div>
+      <div class="footer-bottom">
+        <p>Thông báo khi nhận hàng | Về Quảng cáo của chúng tôi</p>
+        <p>Chính sách bảo mật | Điều khoản sử dụng |</p>
+        <p>Đạo luật về chuỗi cung ứng minh bạch của California |</p>
+        <p>Gx Lựa chọn quyền riêng tư của bạn</p>
+        <p>S/TM/® Công ty TNHH Big Heart Det</p>
+      </div>
+    </footer>
+
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <h2>Tạo tài khoản</h2>
+        <input type="text" placeholder="Tên" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Mật khẩu" />
+        <input type="password" placeholder="Nhập lại mật khẩu" />
+        <div style="display: flex; justify-content: center; gap: 40px">
+          <button class="btn">Đăng ký</button>
+          <button class="btn" id="login-re">Đăng nhập</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <h2>Đăng nhập</h2>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Mật khẩu" />
+        <div class="forgot">Bạn quên mật khẩu?</div>
+        <button class="btn">Đăng nhập</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    const links = document.querySelectorAll(".menu a");
+    const currentPage = location.pathname.split("/").pop();
+
+    links.forEach((link) => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const registerModal = document.getElementById("registerModal");
+      const loginModal = document.getElementById("loginModal");
+      const loginRe = document.getElementById("login-re");
+
+      document.getElementById("login-re").onclick = () => {
+        registerModal.style.display = "none";
+        loginModal.style.display = "flex";
+      };
+
+      document.getElementById("showRegister").onclick = () => {
+        registerModal.style.display = "flex";
+      };
+      document.getElementById("showLogin").onclick = () => {
+        loginModal.style.display = "flex";
+      };
+
+      window.onclick = (e) => {
+        if (e.target === registerModal) {
+          registerModal.style.display = "none";
+        }
+        if (e.target === loginModal) {
+          loginModal.style.display = "none";
+        }
+      };
+    });
+  </script>
+</html>
